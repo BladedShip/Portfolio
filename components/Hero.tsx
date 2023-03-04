@@ -16,6 +16,7 @@ function Hero({}: Props) {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
+      {/* FIXME: Circles not animating from image center */}
       {/* TODO: Switch from img to Image */}
       <img
         src="https://ih1.redbubble.net/image.493101319.0659/st,small,845x845-pad,1000x1000,f8f8f8.u3.jpg"
