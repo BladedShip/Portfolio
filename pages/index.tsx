@@ -1,17 +1,32 @@
+import Header from '@/components/Header'
+import Hero from '@/components/Hero'
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <>
+    <div className='bg-[#2c2c2c] text-[#fcfcfc] h-screen snap-y snap-mandatory overflow-scroll z-0'>
       <Head>
-        <title>Create Next App</title>
+        <title>Adithyan Jayakumar</title>
       </Head>
-      <h1>Hello vro</h1>
-    </>
+
+      {/* Header */}
+      <Header/>
+
+      {/* TODO:Hero */}
+      <section id="hero" className='snap-center'>
+        <Hero/>
+      </section>
+
+      {/* TODO:About */}
+
+      {/* TODO:Experience */}
+
+      {/* TODO:Skills */}
+
+      {/* TODO:Projects */}
+
+      {/* TODO:Contact */}
+      
+    </div>
   )
 }
