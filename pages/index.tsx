@@ -3,6 +3,9 @@ import Head from 'next/head'
 import About from '@/components/About'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import Experience from '@/components/Experience'
+import Skills from '@/components/Skills'
+import Projects from '@/components/Projects'
 
 
 export default function Home() {
@@ -12,11 +15,11 @@ export default function Home() {
         <title>Adithyan Jayakumar</title>
       </Head>
 
-      {/* Header */}
+      {/* TODO: Add proper Social icons (Through Sanity) */}
       <Header/>
 
       {/* FIXME:Hero */}
-      <section id="hero">
+      <section id="hero"  className="">
         <Hero/>
       </section>
 
@@ -25,11 +28,20 @@ export default function Home() {
         <About/>
       </section>
 
-      {/* TODO:Experience */}
+      {/* FIXME:Experience */}
+      <section id="experience">
+        <Experience/>
+      </section>
 
       {/* TODO:Skills */}
+      <section id="skills">
+        <Skills/>
+      </section>
 
       {/* TODO:Projects */}
+      <section id="projects">
+        <Projects/>
+      </section>
 
       {/* TODO:Contact */}
       
