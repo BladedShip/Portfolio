@@ -1,10 +1,13 @@
+import Head from 'next/head'
+
+import About from '@/components/About'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
-import Head from 'next/head'
+
 
 export default function Home() {
   return (
-    <div className='bg-[#2c2c2c] text-[#fcfcfc] h-screen snap-y snap-mandatory overflow-scroll z-0'>
+    <div className='bg-[#2c2c2c] text-[#fcfcfc] h-screen snap-y snap-mandatory overflow-y-scroll z-0'>
       <Head>
         <title>Adithyan Jayakumar</title>
       </Head>
@@ -12,12 +15,15 @@ export default function Home() {
       {/* Header */}
       <Header/>
 
-      {/* TODO:Hero */}
-      <section id="hero" className='snap-center'>
+      {/* FIXME:Hero */}
+      <section id="hero">
         <Hero/>
       </section>
 
-      {/* TODO:About */}
+      {/* FIXME:About */}
+      <section id="about">
+        <About/>
+      </section>
 
       {/* TODO:Experience */}
 
